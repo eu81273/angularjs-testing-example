@@ -2,24 +2,31 @@
 
 /* 컨트롤러 단위 테스트 */
 
-describe('controllers', function(){
-	beforeEach(angular.mock.module('myApp.controllers'));
+describe('controllers 단위 테스트', function(){
+	beforeEach(module('myApp.controllers'));
 
-	it('MyCtrl1 컨트롤러 존재', inject(function($rootScope, $controller) {
+	var scope;
 
-		var $scope = $rootScope.$new();
+	it('MyCtrl1 컨트롤러 test1값', inject(function($rootScope, $controller) {
+
+		scope = $rootScope.$new();
 		var ctrl = $controller('MyCtrl1', {
-			$scope : $scope
+			$scope : scope
 		});
+
+		expect(scope.test1).toBe('EFG');
 
 	}));
 
-	it('MyCtrl2 컨트롤러 존재', inject(function($rootScope, $controller) {
+	it('MyCtrl2 컨트롤러 test2값', inject(function($rootScope, $controller) {
 
-		var $scope = $rootScope.$new();
+		scope = $rootScope.$new();
 		var ctrl = $controller('MyCtrl2', {
-			$scope : $scope
+			$scope : scope
 		});
 
+		expect(scope.test2()).toBe('안녕히계세요!!');
+
 	}));
+
 });
