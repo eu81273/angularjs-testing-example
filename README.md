@@ -13,25 +13,26 @@ AngularJS Seed 를 기반으로 제작되었고, 윈도우 + 크롬만 고려되
 
 ## Directory Layout
 
-    app/                --> all of the files to be used in production
-      css/              --> css files
-        app.css         --> default stylesheet
-      img/              --> image files
-      index.html        --> app layout file (the main html template file of the app)
-      js/               --> javascript files
-        app.js          --> application
-        controllers.js  --> application controllers
-        directives.js   --> application directives
-        filters.js      --> custom angular filters
-        services.js     --> custom angular services
-      lib/              --> angular and 3rd party javascript libraries
-        angular/
-          angular.js        --> the latest angular js
-          angular.min.js    --> the latest minified angular js
-          angular-*.js      --> angular add-on modules
+    app/                    --> [모든 파일이 담겨진 최상위 폴더]
+      web-server-start.bat  --> 웹서버 실행 배치 파일
+      css/                  --> [css 폴더]
+        app.css             --> 기본 스타일시트 파일
+      img/                  --> [image 폴더]
+      index.html            --> index 파일 메인 HTML 페이지)
+      js/                   --> [javascript 폴더]
+        app.js              --> 어플리케이션 모듈
+        controllers.js      --> 컨트롤러 모듈
+        directives.js       --> 사용자 지시자 모듈
+        filters.js          --> 사용자 필터 모듈
+        services.js         --> 사용자 서비스 모듈
+      lib/                  --> angular 와 3rd party 라이브러리 폴더
+        angular/            --> [angular] 폴더
+          angular.js        --> 최신 angular js
+          angular.min.js    --> 최신 minified angular js
+          angular-*.js      --> 추가적인 angular modules
           version.txt       --> version number
-      partials/             --> angular view partials (partial html templates)
-        partial1.html
+      partials/             --> AgularJS 뷰 템플릿 (partial html templates)
+        partial1.html       --> ng-view에 출력디
         partial2.html
 
     config/karma.conf.js        --> config file for running unit tests with Karma
