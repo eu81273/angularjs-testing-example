@@ -4,9 +4,9 @@ AngularJS 테스트 예제
 
 이 프로젝트는 마이크로소프트웨어 AngularJS 실전 강의를 위한 예제입니다.
 
-카르마(karma) 기반의 Unit 테스트 및 E2E 테스트 환경 구축되어 있는 프로젝트입니다.
+카르마(karma) 기반의 Unit 테스트 및 E2E 테스트 환경 구축되어 있어 쉽게 AngularJS 테스팅을 실습해볼 수 있습니다.
 
-AngularJS Seed 를 기반으로 제작되었고, 윈도우 + 크롬만 고려되었습니다.
+AngularJS Seed 를 기반으로 제작되었고, 편의상 윈도우 + 크롬만 고려되었습니다.
 
 
 
@@ -32,31 +32,31 @@ AngularJS Seed 를 기반으로 제작되었고, 윈도우 + 크롬만 고려되
           angular-*.js      --> 추가적인 angular modules
           version.txt       --> version number
       partials/             --> AgularJS 뷰 템플릿 (partial html templates)
-        partial1.html       --> ng-view에 출력디
+        partial1.html       --> ng-view에 출력될 페이지들..
         partial2.html
 
-    config/karma.conf.js        --> config file for running unit tests with Karma
-    config/karma-e2e.conf.js    --> config file for running e2e tests with Karma
+    config/karma.conf.js        --> 카르마 단위테스트 설정 파일
+    config/karma-e2e.conf.js    --> 카르마 E2E테스트 설정 파일
 
-    scripts/            --> handy shell/js/ruby scripts
-      e2e-test.bat      --> runs end-to-end tests with Karma (windows)
-      test.bat          --> autotests unit tests with Karma (windows)
-      web-server.js     --> simple development webserver based on node.js
+    scripts/            --> 테스트를 쉽게 실행할 수 있도록 만들어놓은 배치파일 폴더
+      e2e-test.bat      --> 카르마 E2E 테스트 실행
+      test.bat          --> 카르마 단위 테스트 실행
+      web-server.js     --> node.js에 기반의 간단한 웹서버
 
-    test/               --> test source files and libraries
+    test/               --> 테스트 관련 소스들과 라이브러리들 폴더
       e2e/              -->
-        runner.html     --> end-to-end test runner (open in your browser to run)
-        scenarios.js    --> end-to-end specs
+        runner.html     --> E2E 테스트 러너
+        scenarios.js    --> E2E 테스트 스펙
       lib/
-        angular/                --> angular testing libraries
-          angular-mocks.js      --> mocks that replace certain angular services in tests
-          angular-scenario.js   --> angular's scenario (end-to-end) test runner library
-          version.txt           --> version file
-      unit/                     --> unit level specs/tests
-        controllersSpec.js      --> specs for controllers
-        directivessSpec.js      --> specs for directives
-        filtersSpec.js          --> specs for filters
-        servicesSpec.js         --> specs for services
+        angular/                --> 앵귤러 테스팅 라이브러리
+          angular-mocks.js      --> 테스트를 위한 특정 앵귤러 서비스의 Mock
+          angular-scenario.js   --> 앵귤러 시나리오 테스트(E2E) 러너 라이브러리
+          version.txt           --> 버전 파일
+      unit/                     --> 
+        controllersSpec.js      --> 컨트롤러 단위 테스트 스펙
+        directivessSpec.js      --> 지시자 단위 테스트 스펙
+        filtersSpec.js          --> 필터 단위 테스트 스펙
+        servicesSpec.js         --> 서비스 단위 테스트 스펙
 
 
 ## Contact
@@ -69,25 +69,4 @@ AngularJS Seed 를 기반으로 제작되었고, 윈도우 + 크롬만 고려되
 The MIT License.
 
 Copyright ⓒ 2013 안재하.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
